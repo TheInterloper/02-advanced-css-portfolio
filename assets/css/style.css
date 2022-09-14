@@ -26,6 +26,10 @@ h2 {
   background-color: chartreuse;
 }
 
+h3 {
+  text-align: center;
+}
+
 /* Classes */
 
 .links {
@@ -37,6 +41,9 @@ h2 {
 }
 
 .self {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
   border: 2px solid green;
   max-width: 25%;
   max-height: 25%;
@@ -45,15 +52,32 @@ h2 {
 .filler {
   font-size: 18px;
   background-color: brown;
+  padding: 10px;
 }
 
-.app1 {
-  max-width: 100%;
+.appMain {
+  display: flex;
+  border: 5px solid black;
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px
+}
+
+.appSub {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* IDs */
 
 #aboutme {
   background-color: gold;
+  padding: 25px;
+}
+
+#mywork {
+
 }
 
