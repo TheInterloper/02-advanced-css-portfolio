@@ -1,3 +1,5 @@
+/* Elements */
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -9,10 +11,10 @@ header {
   border-color: black;
   text-align: center;
   background-color: darkmagenta;
-  
 }
 
 main {
+  background-color: grey;
 
 }
 h1 {
@@ -21,20 +23,21 @@ h1 {
 
 h2 {
   text-align: center;
-  padding: 10px;
-  font-size: 4em;
   background-color: chartreuse;
-
 }
 
+/* Classes */
+
 .links {
-  width: 100%;
+  margin: auto;
   text-align: center;
   display: inline;
   padding: 15px;
+  border: 2px solid green;
 }
 
 .self {
+  border-width: 2px;
   max-width: 25%;
   max-height: 25%;
 }
@@ -44,6 +47,8 @@ h2 {
   background-color: brown;
 }
 
-.aboutme {
+/* IDs */
+
+#aboutme {
   background-color: gold;
 }
