@@ -37,14 +37,18 @@ h2 {
 }
 
 .self {
-  border-width: 2px;
+  border: 2px solid green;
   max-width: 25%;
   max-height: 25%;
 }
 
 .filler {
-  font-size: 2em;
+  font-size: 18px;
   background-color: brown;
+}
+
+.app1 {
+  max-width: 100%;
 }
 
 /* IDs */
@@ -52,3 +56,4 @@ h2 {
 #aboutme {
   background-color: gold;
 }
+
