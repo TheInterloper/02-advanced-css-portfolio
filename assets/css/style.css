@@ -1,44 +1,46 @@
-/* color palette
-#20BF55
-#0B4F6C
-#01BAEF
-#FBFBFF
-#757575
-*/
+* {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  box-sizing: border-box;
+}
 
 /* Elements */
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #DAF7DC;
+  padding: 70px;
+}
 
+main {
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   width: 100%;
   height: 100px;
-  border-width: 2px;
-  border-color: black;
   text-align: center;
-  background-color: darkmagenta;
+  background-color: #9EE493;
 }
 
-main {
-  background-color: grey;
-
-}
 
 h1 {
   text-align: center;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 
 h2 {
+  height: 50px;
+  font-size: x-large;
   text-align: center;
-  background-color: chartreuse;
+  background-color: #86BBD8;
 }
 
 h3 {
   text-align: center;
 }
+
+section.self {}
 
 /* Classes */
 
@@ -47,44 +49,99 @@ h3 {
   text-align: center;
   display: inline;
   padding: 15px;
-  border: 2px solid green;
 }
 
-.self {
+ul li {
+
   display: inline;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 10px;
+}
+
+
+.self {
+  display: block;
+
+  /* margin-left: auto;
+  margin-right: auto; */
   border: 2px solid green;
   max-width: 25%;
   max-height: 25%;
 }
 
 .filler {
-  font-size: 18px;
-  background-color: brown;
+  font-size: 26px;
+  background-color: #86BBD8;
   padding: 10px;
 }
 
-.appMain {
-  display: flex;
-  border: 5px solid black;
-  max-width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-top: 20px
+div.appContain {
+  justify-content: center;
 }
 
-.appSub {
-  margin-left: auto;
-  margin-right: auto;
+
+
+#appMain:hover {
+  border-color: #9EE493;
+}
+
+div.apps {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  gap: 20px;
+}
+
+div p {
+  background-color: #336699;
+  padding: 25px;
+  color: white;
 }
 
 /* IDs */
 
-#aboutme {
-  background-color: gold;
-  padding: 25px;
+#mywork {}
+
+img#appMain {
+  border: 5px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-#mywork {}
+#proj2,
+#proj3,
+#proj4,
+#proj5 {
+  margin: 20px;
+}
+
+#proj2 {}
+
+#proj3 {}
+
+#proj4 {}
+
+#proj5 {}
+
+img#proj2:hover {
+  border: 5px solid #9EE493
+}
+
+img#proj3:hover {
+  border: 5px solid #9EE493
+}
+
+img#proj4:hover {
+  border: 5px solid #9EE493
+}
+
+img#proj5:hover {
+  border: 5px solid #9EE493
+}
+
+/* Media Queries */
+
+@media screen and (max-width :992px) {
+  .apps {
+    width: 50%;
+  }
+}
