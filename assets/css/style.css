@@ -37,6 +37,7 @@ h2 {
 
 h3 {
   text-align: center;
+  height: 50px;
 }
 
 section.self {
@@ -78,22 +79,15 @@ div.appContain {
   
 }
 
-.appMain {
-  display: flex;
-  flex-direction: column;
-  border: 5px solid black;
-  max-width: 85%;
-  margin-bottom: 20px;
-  margin-top: 20px
-}
 
-.appMain:hover {
+
+#appMain:hover {
   border-color: #9EE493;
 }
 
 div.apps {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 25%;
 }
 
@@ -106,7 +100,13 @@ div p {
 /* IDs */
 
 #mywork {
+  display: flex
+}
 
+div#appMain {
+  border: 5px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #proj2, #proj3, #proj4, #proj5 {
