@@ -1,11 +1,13 @@
 * {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  box-sizing: border-box;
 }
 
 /* Elements */
 
 body {
   background-color: #DAF7DC;
+  padding: 70px;
 
 }
 header {
@@ -16,18 +18,17 @@ header {
 }
 
 main {
-
+  display: flex;
+  flex-direction: column;
 
 }
 h1 {
   text-align: center;
   font-size: 3rem;
   font-weight: bolder;
-  padding: 25px;
 }
 
 h2 {
-  padding: 10px;
   height: 50px;
   font-size: x-large;
   text-align: center;
@@ -39,8 +40,6 @@ h3 {
 }
 
 section.self {
-  display: flex;
-  justify-content: center;
 }
 
 /* Classes */
@@ -53,7 +52,8 @@ section.self {
 }
 
 ul li {
-  display: block;
+
+  display: inline;
   padding: 10px;
 }
 
@@ -74,11 +74,15 @@ ul li {
   padding: 10px;
 }
 
-.appMain {
+div.appContain {
+  
+}
+
+div.appMain {
   display: flex;
+  flex-direction: column;
   border: 5px solid black;
   max-width: 85%;
-  justify-content: center;
   margin-bottom: 20px;
   margin-top: 20px
 }
@@ -87,21 +91,23 @@ ul li {
   border-color: aqua;
 }
 
-.apps {
+div.apps {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 25%;
+
+  
 }
 
-/* .appSub {
-  width: 25%;
-} */
+.appSub {
+  max-width: 400px;
+  margin: 10px;
+}
 
-div.apps.appSub {
+
   display: flex;
   flex-wrap: wrap;
-}
+} */
 
 /* IDs */
 
@@ -114,3 +120,9 @@ div.apps.appSub {
 
 }
 
+@media screen and (max-width :992px) {
+  .apps {
+    width: 50%;
+  }
+}
+  
