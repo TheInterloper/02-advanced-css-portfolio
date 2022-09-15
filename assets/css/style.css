@@ -105,6 +105,8 @@ img#appMain {
   border: 5px solid black;
   margin-top: 20px;
   margin-bottom: 20px;
+  width: 20%;
+  height: 20%;
 }
 
 #proj2,
