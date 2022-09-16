@@ -74,9 +74,9 @@ ul li {
   padding: 10px;
 }
 
-div.appContain {
+/*div.appContain {
   justify-content: center;
-}
+}*/
 
 
 
@@ -84,11 +84,14 @@ div.appContain {
   border-color: #9EE493;
 }
 
-div.apps {
+.apps {
   display: flex;
   flex-direction: row;
-  width: 25%;
-  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.first-image {
+  /* padding: 10px; */
 }
 
 div p {
@@ -101,13 +104,20 @@ div p {
 
 #mywork {}
 
-img#appMain {
+.mainImg {
   border: 5px solid black;
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 20%;
-  height: 20%;
+  /*width: 20%;*/
+  /*height: 20%;*/
+  overflow: hidden;
 }
+
+.central-image {
+  width: 100%;
+  object-fit: cover;
+}
+
 
 #proj2,
 #proj3,
@@ -116,7 +126,13 @@ img#appMain {
   margin: 20px;
 }
 
-#proj2 {}
+#proj2 {
+  padding: 10px;
+}
+
+#proj2:hover {
+  padding: 0px;
+}
 
 #proj3 {}
 
@@ -124,25 +140,32 @@ img#appMain {
 
 #proj5 {}
 
-img#proj2:hover {
-  border: 5px solid #9EE493
+/* img#proj2:hover {
+  border: 1px solid #9EE493
 }
 
 img#proj3:hover {
-  border: 5px solid #9EE493
+  border:15px solid #9EE493
 }
 
 img#proj4:hover {
-  border: 5px solid #9EE493
+  border: 1px solid #9EE493
 }
 
 img#proj5:hover {
-  border: 5px solid #9EE493
-}
+  border: 1px solid #9EE493
+} */
 
 /* Media Queries */
 
+/* come bnacke to fix this class */
 @media screen and (max-width :992px) {
+  .apps {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width :756px) {
   .apps {
     width: 50%;
   }
