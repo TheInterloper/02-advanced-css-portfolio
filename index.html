@@ -9,8 +9,8 @@
     <title>My Portfolio Page</title>
   </head>
   <body>
-    <header>
-      <h1>My Portfolio</h1>
+    <header class="title">
+      <h1 class="my-portfolio">My Portfolio</h1>
       <nav>
         <ul>
           <li class="links"><a href="#aboutme">About Me</a></li>
@@ -31,7 +31,7 @@
     </header>
     <main>
       <section>
-        <h2>Tyler Olson</h2>
+        <h2 class="name">Tyler Olson</h2>
         <img
           class="self"
           src="./assets/images/selfie.jpg"
@@ -79,7 +79,7 @@
       </section>
       <!-- This section will be for About Me  -->
       <section>
-        <h3>About Me</h3>
+        <h3 class="about-me">About Me</h3>
         <div>
           <p>
             My name is Tyler, I am 37 years old. I recently quit my job as a CNC
@@ -90,43 +90,43 @@
 
       <!-- This section will be for applications -->
       <section id="mywork">
-        <h3>My Applications</h3>
-        <div class="appContain">
-          <div class="mainImg">
-            <!-- this keeps breaking -->
-            <img
+        <h3 class="applications">My Applications</h3>
+        <div>
+          <div class="main-img">
+            <a href="https://theinterloper.github.io/01coderefactor/"><img
               class="central-image"
               id="appMain"
               src="./assets/images/Horiseon.png"
               alt="first application"
-            />
+            /></a>
+            <p class="first-app">First Application</p>
           </div>
-
-          <div class="apps">
+        </div>
+        
+        <div class="apps">
             <img
               id="proj2"
-              src="https://via.placeholder.com/400"
+              src="./assets/images/coming-soon.jpg"
               alt="placeholder"
             />
 
             <img
-              id="proj3"
-              src="https://via.placeholder.com/400"
-              alt="placeholder"
-            />
-
-            <img
+            id="proj3"
+            src="./assets/images/coming-soon.jpg"
+            alt="placeholder"
+          />
+           
+           <img
               id="proj4"
-              src="https://via.placeholder.com/400"
+              src="./assets/images/coming-soon.jpg"
               alt="placeholder"
             />
-
+          
             <img
-              id="proj5"
-              src="https://via.placeholder.com/400"
-              alt="placeholder"
-            />
-          </div>
+            id="proj5"
+            src="./assets/images/coming-soon.jpg"
+            alt="placeholder"
+          />
         </div>
       </section>
     </main>
